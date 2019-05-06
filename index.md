@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Contributors
 
-You can use the [editor on GitHub](https://github.com/hodges96/ECE4424Final/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Luke Beckwith
+Ethan Hodges
+Connor Rudy
+Adam Wilborn
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Overview
 
-### Markdown
+Overview
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Approach
 
-```markdown
-Syntax highlighted code block
+Approach
 
-# Header 1
-## Header 2
-### Header 3
+## Concerns and Issues
 
-- Bulleted
-- List
+Concerns
 
-1. Numbered
-2. List
+## Reproduction
 
-**Bold** and _Italic_ and `Code` text
+Reproduction
 
-[Link](url) and ![Image](src)
-```
+#### Running
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Running
 
-### Jekyll Themes
+#### Data Changes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hodges96/ECE4424Final/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Data Changes
 
-### Support or Contact
+## New Results
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+New Classifiers
+
+## Conclusion
+
+Conclusion
