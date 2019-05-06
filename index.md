@@ -1,13 +1,13 @@
 ## Contributors
 
-Luke Beckwith
-Ethan Hodges
-Connor Rudy
-Adam Wilborn
+Luke Beckwith - luke98@vt.edu  
+Ethan Hodges - hodges96@vt.edu  
+Connor Rudy - cmrudy@vt.edu  
+Adam Wilborn - adamw97@vt.edu  
 
 ## Overview
 
-Overview
+
 
 ## Approach
 
@@ -17,22 +17,26 @@ Approach
 
 Concerns
 
-## Reproduction
+## Reproduction and Results
 
 Reproduction
 
-#### Running
+#### Reproducing Original Results
 
 Running
 
-#### Data Changes
+#### Generating Results with New Data
 
 Data Changes
 
-## New Results
+#### Applying Different Classifiers
 
 New Classifiers
 
 ## Conclusion
 
 Conclusion
+
+## References
+
+References
