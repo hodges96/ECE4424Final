@@ -46,7 +46,7 @@ When running the analysis using a near-identical environment as the original aut
 | GradientBoosting | 0.738     | 0.735      |
 | Random Forest    | 0.708     | 0.707      |
 
-**Table 1: Original and Reproduced Accuracies using only AF**
+**Table 1: Original and Reproduced Model Accuracies using only AF**
 
 
 ### Generating Results with New Data
@@ -62,7 +62,7 @@ When running the analysis using our compiled data, the accuracy was not as high 
 | GradientBoosting | 0.738     | 0.713      |
 | Random Forest    | 0.708     | 0.688      |
 
-**Table 2: Original and Reproduced Accuracies using Compiled Dataset against only AF**
+**Table 2: Original and Reproduced Model Accuracies using New Dataset**
 
 
 ### Applying Different Classifiers
@@ -76,7 +76,7 @@ When running the analysis with our new classifiers on both the old data and new 
 | K-Neighbors                  | 0.684          | 0.662         |
 | Gaussian Naive Bayes         | 0.576          | 0.288         |
 
-**Table 3: Accuracies for Original and Compiled Data using 3 New Classifiers**
+**Table 3: Model Accuracies for Original and New Datasets using Different Classifiers**
 
 
 ## Conclusion
