@@ -39,22 +39,34 @@ In this section, we present our results for each of our reproduction methods des
 When running the analysis using a near-identical environment as the original authors, we found the results to be highly reproducible. As can be seen below in Table 1, the largest discrepancy occurred for the AdaBoost classifier, with only a 0.3% difference between our results and the original.
 
 
-          | Classifier       | Original  | Reproduced | 
-          | ---------------- | --------- | ---------- |
-          | Decision Tree    | 0.618     | 0.618      |
-          | SVM              | 0.352     | 0.352      |
-          | AdaBoost         | 0.704     | 0.704      |
-          | GradientBoosting | 0.738     | 0.735      |
-          | Random Forest    | 0.708     | 0.707      |
+| Classifier       | Original  | Reproduced | 
+| ---------------- | --------- | ---------- |
+| Decision Tree    | 0.618     | 0.618      |
+| SVM              | 0.352     | 0.352      |
+| AdaBoost         | 0.704     | 0.704      |
+| GradientBoosting | 0.738     | 0.735      |
+| Random Forest    | 0.708     | 0.707      |
+**Table 1: Original and Reproduced Accuracies on 5 Classifiers**
 
 
 #### Generating Results with New Data
 
-Data Changes
+When running the analysis using our compiled data, the accuracy was not as high as the original. Several factors could have played a role in this. First off, the size of our dataset was much smaller than the data used in the original paper. Having less training data causes the model to make assumptions about the specified relationships, without fully identifying what data is signal, and what is just noise. Another issue was discussed above, where our data-collection method was inherently biased. Our results using our dataset are presented below in Table 2.
+
+
+| Classifier       | Original  | Reproduced | 
+| ---------------- | --------- | ---------- |
+| Decision Tree    | 0.618     | 0.618      |
+| SVM              | 0.352     | 0.352      |
+| AdaBoost         | 0.704     | 0.704      |
+| GradientBoosting | 0.738     | 0.735      |
+| Random Forest    | 0.708     | 0.707      |
+**Table 2: Original and Reproduced Accuracies using Compiled Dataset**
+
 
 #### Applying Different Classifiers
 
-New Classifiers
+XXX Add after Connor finishes XXX
 
 ## Conclusion
 
@@ -62,4 +74,6 @@ Conclusion
 
 ## References
 
-References
+[1] L. Li, Z. Song, X. Zhang, E. Fox. 2018. *A Hybrid Model for Role-related User Classification on Twitter*. 
+[2] J. Avinash, R. Muniraju, S. Shaligraman. 2017. *Gender Classification using Twitter Feeds*.
+[3] Fortune-1000-Company-Twitter-Accounts.csv. https://gist.github.com/mbejda/45db05ea50e79bc42016
