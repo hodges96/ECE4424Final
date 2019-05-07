@@ -46,6 +46,7 @@ When running the analysis using a near-identical environment as the original aut
 | AdaBoost         | 0.704     | 0.704      |
 | GradientBoosting | 0.738     | 0.735      |
 | Random Forest    | 0.708     | 0.707      |
+{: .text-center}
 
 **Table 1: Original and Reproduced Accuracies using only AF**
 
