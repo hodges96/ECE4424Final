@@ -32,11 +32,21 @@ As mentioned above, our process for building our dataset also introduced its own
 
 ## Reproduction and Results
 
-Reproduction
+In this section, we present our results for each of our reproduction methods described above.
 
 #### Reproducing Original Results
 
-Running
+When running the analysis using a near-identical environment as the original authors, we found the results to be highly reproducible. As can be seen below in Table 1, the largest discrepancy occurred for the AdaBoost classifier, with only a 0.3% difference between our results and the original.
+
+
+| Classifier       | Original  | Reproduced | 
+| ---------------- | --------- | ---------- |
+| Decision Tree    | 0.618     | 0.618      |
+| SVM              | 0.352     | 0.352      |
+| AdaBoost         | 0.704     | 0.704      |
+| GradientBoosting | 0.738     | 0.735      |
+| Random Forest    | 0.708     | 0.707      |
+
 
 #### Generating Results with New Data
 
