@@ -81,7 +81,7 @@ When running the analysis with our new classifiers on both the old data and new 
 
 ## Conclusion
 
-Overall, our findings are fairly consistent with those of the original research paper. Our reproduction of model accuracies using the original data matched very closely to the findings initially presented, while running the models on our compiled data generated slightly lower accuracies. While our data collection had some issues presented above, the accuracy trends matched generally with the original results. Although we were able to generate promising results using additional classifiers, we believe the authors of the original findings chose a well-rounded set of classifiers to reflect their dataset and produce a satisfactory and true result. For that reason, we believe that the findings originally presented are reasonable, and the authors' method for classification of users seems to have merit.
+Overall, our findings are fairly consistent with those of the original research paper. Our reproduction of model accuracies using the original data matched very closely to the findings initially presented, while running the models on our compiled data generated slightly lower accuracies. While our data collection had some issues, the accuracy trends matched generally with the original results. Although we were able to generate promising results using additional classifiers, we believe the authors of the original findings chose a well-rounded set of classifiers to reflect their dataset and produce a satisfactory and true result. For that reason, we believe that the findings originally presented are reasonable, and the authors' method for classification of users seems to have merit.
 
 ## References
 
