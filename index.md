@@ -19,8 +19,7 @@ Our first step was to reproduce the original paper's results. The authors utiliz
 
 After verifying the authors' data by reproducing their environment as best we could, we decided to run the model against a different dataset. This would allow us to further reinforce the conclusions reached by the original team. Unfortunately, we could not find any available datasets that met the requirements of this project, so we built our own using a technique similar to the one described in *Gender Classification using Twitter Feeds* [2]. The basic process we followed was to first retrieve common male and female names from the 2010 United States census, then use them to obtain Twitter handles that likely belonged to male or female Twitter users. Tweets for each user were scraped using Twitter's API. To obtain tweets from brand-related users, we consulted a list of Fortune 1000 companies' Twitter handles [3]. Similar to before, we made requests using Twitter's API to build a database of tweets. We recognize that the method that we applied to building our own database introduced bias, and we address these concerns below in the Issues and Concerns section.
 
-Finally, we wished to extend the original paper's results by using other classifiers in the model.  
-XXX Add more info once Connor finishes. XXX
+Finally, we wished to extend the original paper’s results by using three other classifiers in the model. We used Linear Discriminant Analysis, K-Neighbors, and Gaussian Naive Bayes to compare to the original paper’s data.  We wanted to ensure the authors’ used classifiers were truly objective.
 
 ## Issues and Concerns
 
@@ -46,7 +45,6 @@ When running the analysis using a near-identical environment as the original aut
 | AdaBoost         | 0.704     | 0.704      |
 | GradientBoosting | 0.738     | 0.735      |
 | Random Forest    | 0.708     | 0.707      |
-{: .text-center}
 
 **Table 1: Original and Reproduced Accuracies using only AF**
 
@@ -69,7 +67,7 @@ When running the analysis using our compiled data, the accuracy was not as high 
 
 ### Applying Different Classifiers
 
-XXX Add after Connor finishes XXX
+When running the analysis with our new classifiers on both the old data and new data, the differences in the calculated accuracies for Linear Discriminant Analysis and K-neighbors were very small. However, after running Gaussian Naive Bayes, the original data’s accuracy was much higher than our new data’s.  Similar to the issues stated above, our smaller dataset and inherently-biased collection method may have been the cause to the large difference in accuracies. Overall, none of the new classifiers that we ran provided higher accuracies than the best classifier from the original paper. Linear Disciminant Analysis and K-Neighbors performed relatively well, but further analysis using the other classification rounds from TwiRole would be necessary to determine if they are better options than the originals. Our results using are presented below in Table 3.
 
 
 | Classifier                   | Original Data  | Compiled Data | 
@@ -83,7 +81,7 @@ XXX Add after Connor finishes XXX
 
 ## Conclusion
 
-XXX Add after Connor finishes XXX
+Overall, our findings are fairly consistent with those of the original research paper. Our reproduction of model accuracies using the original data matched very closely to the findings initially presented, while running the models on our compiled data generated slightly lower accuracies. While our data collection had some issues presented above, the accuracy trends matched generally with the original results. Although we were able to generate promising results using additional classifiers, we believe the authors of the original findings chose a well-rounded set of classifiers to reflect their dataset and produce a satisfactory and true result.
 
 ## References
 
