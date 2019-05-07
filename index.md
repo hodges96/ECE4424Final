@@ -46,6 +46,7 @@ When running the analysis using a near-identical environment as the original aut
 | AdaBoost         | 0.704     | 0.704      |
 | GradientBoosting | 0.738     | 0.735      |
 | Random Forest    | 0.708     | 0.707      |
+
 **Table 1: Original and Reproduced Accuracies on 5 Classifiers**
 
 
@@ -61,6 +62,7 @@ When running the analysis using our compiled data, the accuracy was not as high 
 | AdaBoost         | 0.704     | 0.704      |
 | GradientBoosting | 0.738     | 0.735      |
 | Random Forest    | 0.708     | 0.707      |
+
 **Table 2: Original and Reproduced Accuracies using Compiled Dataset**
 
 
@@ -74,6 +76,6 @@ Conclusion
 
 ## References
 
-[1] L. Li, Z. Song, X. Zhang, E. Fox. 2018. *A Hybrid Model for Role-related User Classification on Twitter*. 
-[2] J. Avinash, R. Muniraju, S. Shaligraman. 2017. *Gender Classification using Twitter Feeds*.
+[1] L. Li, Z. Song, X. Zhang, E. Fox. 2018. *A Hybrid Model for Role-related User Classification on Twitter*.  
+[2] J. Avinash, R. Muniraju, S. Shaligraman. 2017. *Gender Classification using Twitter Feeds*.  
 [3] Fortune-1000-Company-Twitter-Accounts.csv. https://gist.github.com/mbejda/45db05ea50e79bc42016
