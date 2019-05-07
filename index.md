@@ -22,7 +22,7 @@ After verifying the authors' data by reproducing their environment as best we co
 Finally, we wished to extend the original paper's results by using other classifiers in the model.  
 XXX Add more info once Connor finishes. XXX
 
-## Concerns and Issues
+## Issues and Concerns
 
 Before we present the results of our experimentation, we would like to address several potential concerns with this application of Machine Learning. First and foremost, any application that utilizes algorithmically assigned gender will be inherently biased. Even the best classifier implemented for the paper had less than a 90% accuracy rate when classifying users by role. The 10% percent of misclassified users could experience adverse effects ranging in severity stemming from this model. This issue must be kept at the forefront of any discussion when implementing a system such as the one described.
 
@@ -72,7 +72,7 @@ XXX Add after Connor finishes XXX
 
 ## Conclusion
 
-Conclusion
+XXX Add after Connor finishes XXX
 
 ## References
 
