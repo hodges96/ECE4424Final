@@ -34,7 +34,7 @@ As mentioned above, our process for building our dataset also introduced its own
 
 In this section, we present results for each of our reproduction methods described above.
 
-#### Reproducing Original Results
+### Reproducing Original Results
 
 When running the analysis using a near-identical environment as the original authors, we found the results to be highly reproducible. As can be seen below in Table 1, the largest discrepancy occurred for the GradientBoosting classifier, with only a 0.3% difference between our results and the original.
 
@@ -50,7 +50,7 @@ When running the analysis using a near-identical environment as the original aut
 **Table 1: Original and Reproduced Accuracies using only AF**
 
 
-#### Generating Results with New Data
+### Generating Results with New Data
 
 When running the analysis using our compiled data, the accuracy was not as high as the original. Several factors could have played a role in this. First off, the size of our dataset was much smaller than the data used in the original paper. Having less training data causes the model to make assumptions about the specified relationships, without fully identifying what data is signal, and what is just noise. Another issue was discussed above, where our data-collection method was inherently biased. Our results using our dataset are presented below in Table 2.
 
@@ -66,7 +66,7 @@ When running the analysis using our compiled data, the accuracy was not as high 
 **Table 2: Original and Reproduced Accuracies using Compiled Dataset against only AF**
 
 
-#### Applying Different Classifiers
+### Applying Different Classifiers
 
 XXX Add after Connor finishes XXX
 
