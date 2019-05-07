@@ -11,7 +11,7 @@ For our project, our goal was to reproduce and extend the results presented in t
 
 The hybrid model introduced in this study used several layers of classification. First, the model applied a Basic Feature (BF) multi-classifier, assigning roles based on five common features: name, description, Twitter Follower-Friend ratio, profile image brightness, and tweet content. Next, an Advanced Feature (AF) multi-classifier further explored tweet content using the K-Top Words method. This method examines the most frequently used words across a collection of tweets. Finally, a Convolutional Neural Network (CNN) is applied to the user's profile picture. These classifications are used in conjunction with one another to produce a prediction of male, female, or brand-related role for each given user.
 
-Our work focused on the AF multi-classifier within TwiRole. In order to verify the results from the original paper, we conducted a series of experiments. First, we attempted to reproduce the paper's results using the same classifiers and the same data. Next, we collected our own dataset of tweets and applied the original paper's classifiers. Finally, we explored several other classifiers to see if we could produce better results than the classifiers chosen in the original paper. A more in-depth approach and our results are detailed below.
+Our work focused on the AF multi-classifier within TwiRole. In order to verify the results from the original paper, we conducted a series of experiments. First, we attempted to reproduce the paper's results using the same classifiers and the same data. Next, we collected our own dataset of tweets and applied the original paper's classifiers. Finally, we explored several other classifiers to see if we could produce better results than the classifiers chosen in the original paper. A more in-depth description of our approach and our results are detailed below.
 
 ## Approach
 
@@ -25,7 +25,7 @@ Finally, we wished to extend the original paper’s results by using three other
 
 ## Issues and Concerns
 
-Before we present the results of our experimentation, we would like to address several potential concerns with this application of Machine Learning. First and foremost, any application that utilizes algorithmically assigned gender will be inherently biased. Even the best classifier implemented for the paper had less than a 90% accuracy rate when classifying users by role. The 10% percent of misclassified users could experience adverse effects ranging in severity stemming from this model. This issue must be kept at the forefront of any discussion when implementing a system such as the one described.
+Before we present the results of our experimentation, we would like to address several potential concerns with this application of Machine Learning. First and foremost, any application that utilizes algorithmically assigned gender will be inherently biased. Even the best classifier implemented for the paper had less than a 90 percent accuracy rate when classifying users by role. The 10 percent of misclassified users could experience adverse effects ranging in severity stemming from this model. This issue must be kept at the forefront of any discussion when implementing a system such as the one described.
 
 In addition, there are many Twitter users who identify as transgender or non-binary. Attempting to force these users into a binary box will create discriminatory effects targeting these individuals.
 
