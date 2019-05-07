@@ -19,6 +19,8 @@ Our first step was to reproduce the original paper's results. The authors utiliz
 
 After verifying the authors' data by reproducing their environment as best we could, we decided to run the model against a different dataset. This would allow us to further reinforce the conclusions reached by the original team. Unfortunately, we could not find any available datasets that met the requirements of this project, so we built our own using a technique similar to the one described in *Gender Classification using Twitter Feeds* [2]. The basic process we followed was to first retrieve common male and female names from the 2010 United States census, then use them to obtain Twitter handles that likely belonged to male or female Twitter users. Tweets for each user were scraped using Twitter's API. To obtain tweets from brand-related users, we consulted a list of Fortune 1000 companies' Twitter handles [3]. Similar to before, we made requests using Twitter's API to build a database of tweets. We recognize that the method that we applied to building our own database introduced bias, and we address these concerns below in the Issues and Concerns section.
 
+In total, we collected tweets from 150 new users, 50 each of male, female, and brand users. We added these datapoints to the previous dataset of 6,000 users to create our new dataset.
+
 Finally, we wished to extend the original paper’s results by using three other classifiers in the model. We used Linear Discriminant Analysis, K-Neighbors, and Gaussian Naive Bayes to see if we could find a classifier that performed better than those explored in the original study. To do this, we subsituted these classifiers into the provided code and followed the same process as before.
 
 ## Issues and Concerns
@@ -51,7 +53,7 @@ When running the analysis using a near-identical environment as the original aut
 
 ### Generating Results with New Data
 
-When running the analysis using our compiled data, the accuracy was not as high as the original. Several factors could have played a role in this. First of all, the size of our dataset was much smaller than the data used in the original paper. Having less training data causes the model to make assumptions about the specified relationships, without fully identifying what data represents actionable trends and what data is just noise. Another issue was discussed above, where our data-collection method was inherently biased. Our results using our compiled dataset are presented below in Table 2.
+When running the analysis using our compiled data, we expected the accuracy of the model to stay relatively stable or increase. However, we found signicant decreases in the accuracy of the model for all five classifiers. While running the 10-fold cross-validation, the majority of the new datapoints ended up in the same fold. The first 9 folds experienced an increase in accuracy, while the 10th and final fold had an accuracy that was much lower. These accuracies averaged out to be lower than those found initially. Several factors could have played a role in this. First, our data collection technique introduced bias as discussed above; however, it is unlikely that these large discrepancies are entirely attributable to this factor. We can conclude that another unknown factor introduced by our new data caused the model to fail. Our results using our compiled dataset are presented below in Table 2.
 
 
 | Classifier       | Original  | Reproduced | 
