@@ -19,12 +19,16 @@ Our first step was to reproduce the original paper's results. The authors utiliz
 
 After verifying the authors' data by reproducing their environment as best we could, we decided to run the model against a different dataset. This would allow us to further reinforce the conclusions reached by the original team. Unfortunately, we could not find any available datasets that met the requirements of this project, so we built our own using a technique similar to the one described in *Gender Classification using Twitter Feeds* [2]. The basic process we followed was to first retrieve common male and female names from the 2010 United States census, then use them to obtain Twitter handles that likely belonged to male or female Twitter users. Tweets for each user were scraped using Twitter's API. To obtain tweets from brand-related users, we consulted a list of Fortune 1000 companies' Twitter handles [3]. Similar to before, we made requests using Twitter's API to build a database of tweets. We recognize that the method that we applied to building our own database introduced bias, and we address these concerns below in the Concerns and Issues section.
 
-Finally, we wished to extend the original paper's results by using other classifiers in the model.
+Finally, we wished to extend the original paper's results by using other classifiers in the model.  
 XXX Add more info once Connor finishes. XXX
 
 ## Concerns and Issues
 
-Concerns
+Before we present the results of our experimentation, we would like to address several potential concerns with this application of Machine Learning. First and foremost, any application that utilizes algorithmically assigned gender will be inherently biased. Even the best classifier implemented for the paper had less than a 90% accuracy rate when classifying users by role. The 10% percent of misclassified users could experience adverse effects ranging in severity stemming from this model. This issue must be kept at the forefront of any discussion when implementing a system such as the one described.
+
+In addition, there are many Twitter users who identify as transgender or non-binary. Attempting to force these users into a binary box will create discriminatory effects targeting these individuals.
+
+As mentioned above, our process for building our dataset also introduced its own share of concerns. Primarily, we had to create our own labels for each Twitter handle by looking at common gendered names on the US census. According to our focus paper, Name is the second most distinguishing feature between roles, right after analysis of a user's profile picture [1]. For that reason, we decided that a person's name was an acceptable identifier to group labels for learning. However, as our results below show, a significant decrease in model accuracy accompanied our substitution of new data. This is at least partly attributable to our over-simplified process for assigning role labels to our training data.
 
 ## Reproduction and Results
 
