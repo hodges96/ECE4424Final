@@ -70,6 +70,16 @@ When running the analysis using our compiled data, the accuracy was not as high 
 
 XXX Add after Connor finishes XXX
 
+
+| Classifier                   | Original Data  | Compiled Data | 
+| ---------------------------- | -------------- | ------------- |
+| Linear Discriminant Analysis | 0.705          | 0.675         |
+| K-Neighbors                  | 0.684          | 0.662         |
+| Gaussian Naive Bayes         | 0.576          | 0.288         |
+
+**Table 3: Accuracies for Original and Compiled Data using 3 New Classifiers**
+
+
 ## Conclusion
 
 XXX Add after Connor finishes XXX
